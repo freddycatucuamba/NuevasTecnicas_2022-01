@@ -1,0 +1,9 @@
+
+Nombre: Rita Estefania Mantilla Gallegos
+Trabajo de asistente de ingenieria en una consultora
+Edad 29 años
+Espectativas de la materia: 
+1.-Generar mas conocimiento en programacion 
+2.-Seguir practicando Git
+3.-Aprender Stack Mern
+
