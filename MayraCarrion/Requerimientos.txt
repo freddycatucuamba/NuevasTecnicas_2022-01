@@ -1,0 +1,14 @@
+Requerimientos no funcionales del sistema:
+
+La interfaz del sistema deberá ser una aplicación web
+Cada usuario deberá ingresar con un usuario y contraseña
+La interfaz gráfica deberá ser dinámica y sencilla
+El sistema deberá reconocer los clientes frecuentes y dar descuentos
+El sistema debe cumplir con las normas vigentes del Sri
+Los respaldos deben ser almacenados en una localidad segura ubicada en un edificio distinto al que reside el sistema
+El sistema debe ser capaz de operar con 5 usuarios con sesiones concurrentes
+El sistema deberá almacenar grandes cantidades de datos
+El sistema deberá ser seguro
+La base de datos no representara ningún gasto por el licenciamiento
+
+
