@@ -1,0 +1,4 @@
+EL problema se dio en la conexion que tuvieron las maquinas, debido a que no estaban conectadas a la base de datos.
+El problema fue ayudado por medio de vida telefonica.
+
+Gracias
