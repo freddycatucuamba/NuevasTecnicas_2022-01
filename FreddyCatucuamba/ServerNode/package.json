@@ -1,0 +1,23 @@
+{
+  "name": "servernode",
+  "version": "0.0.1",
+  "description": "Es un ejemplo de servidor con Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "NuevasTecnicasProgramacion"
+  ],
+  "author": "Freddy Catucuamba",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
