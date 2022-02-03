@@ -1,0 +1,9 @@
+#trabajador{
+    border: 2px solid lightblue;
+    background-color: teal;
+    font-size: 15px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 400px;
+    padding-left: 150px;   
+}
