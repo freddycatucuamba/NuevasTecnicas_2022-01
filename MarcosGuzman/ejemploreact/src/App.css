@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#hello{
+    border: 2px solid red;
+    background-color: rgba(55, 170, 80, 0.1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
