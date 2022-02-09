@@ -1,0 +1,21 @@
+doctype html
+html
+  head   
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')  
+  body
+block.row.table.justify-content-md-center    
+    table.table-striped.border.border-primary
+      thead.thead-dark
+        tr
+          th(scope='col') ID
+          th(scope='col') TIPO 
+          th(scope='col') NUMERO 
+          th(scope='col') PISO          
+      tbody
+        each habi in habitaciones
+          tr
+            td(scope='row')
+              = habi.id
+            td= habi.tipo
+            td= habi.numero
+            td= habi.piso
