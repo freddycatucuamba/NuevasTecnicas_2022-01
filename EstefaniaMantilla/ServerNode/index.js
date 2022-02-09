@@ -71,7 +71,7 @@ server.listen(3000, function(){
 });
 
 */
-
+/*
 const express = require('express');
 const app = express();
 const morgan = require ('morgan');
@@ -95,3 +95,45 @@ app.get('/conParametro/:id', (req,res)=> {
 app.listen(app.get('port'), (req, res)=>{
   console.log("El servidor esta en el puerto", app.get('port'))
 });
+*/
+const express = require('express')
+const authRoutes = require('./routes/auth.js')
+const userRoutes = require('./routes/user.js')
+const hotelRoutes = require('./routes/hotel.js')
+require('dotenv').config()
+
+const app = express()
+
+app.use(authRoutes)
+app.use(userRoutes)
+app.use(hotelRoutes)
+
+app.get('/', (req, res) => {
+    res.json({ mensaje: 'My Auth Api Rest' })
+})
+
+//Rutas
+app.use('/', require('./routes/user'))
+//app.use('/hotel', require('./routes/hotel'))
+
+
+const PORT = process.env.PORT || 8002
+app.listen(PORT, () => {
+    console.log(`Tu servidor está corriendo en el puerto: ${PORT}`)
+})
+
+const mongoose = require('mongoose')
+
+const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0.tstnx.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`
+
+mongoose
+  .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log('Conectado a la base de datos')
+  })
+  .catch((e) => {
+    console.log('Database error', e)
+  })
+
+  app.use(express.json());
+app.use(express.urlencoded({ extended: false }));

@@ -19,24 +19,32 @@ class HelloWorld extends React.Component{
  state={
     visible: true  
  }
+  cambiarEstado = ()=>{ 
+    this.setState({
+      visible: !this.state.visible})
+  };
+  
+ 
   render(){
     if(this.state.visible){
       return(
     <div id= "">
         <h3>{this.props.titulo}</h3>
         <p>{this.props.nombre}</p>
+        
+        <button onClick= {this.cambiarEstado}> Cambiar Estado </button>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cuesta_del_obispo_01.jpg/640px-Cuesta_del_obispo_01.jpg" width = '200'/>
     </div>
       )
     }
     else {
         return(
-          <div> No existen datos</div>
+          <button onClick= {this.cambiarEstado}> Cambiar Estado </button>
         )
     }
   }
 }
-
+//reserva de habitaciones de hotel
 /*
 function HelloWorld(props){
   console.log(props)

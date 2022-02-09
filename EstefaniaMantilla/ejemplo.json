@@ -1,0 +1,7 @@
+
+ {
+    "orden_item" : {
+        "numero_adultos": "int",
+        "numero_niños": "int"
+    }
+}
