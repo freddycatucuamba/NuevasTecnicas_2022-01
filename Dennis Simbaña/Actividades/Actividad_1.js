@@ -13,5 +13,9 @@ function MayorN(n1, n2){
 
             }
         }
+
+
+        MayorN(8,3);
+        
     
 

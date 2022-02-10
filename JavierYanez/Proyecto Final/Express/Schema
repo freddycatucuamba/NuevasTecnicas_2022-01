@@ -1,0 +1,49 @@
+
+//SCHEMAS
+const habitacionSchema = new Schema ({
+    id: Number,
+    tipo: String,
+    numero: Number,
+    piso: Number
+});
+
+var usuarioSchema = new Schema({
+    nombre: String,
+    apellido: String,
+    ciudad: String,
+    email: String,
+    telefono: Number
+});
+
+var clienteSchema = new Schema({
+    ci:Number,
+    nombre: String,
+    apellido: String,
+    ciudad: String,
+    email: String,
+    telfono: Number
+});
+
+var resrevaSchema = new Schema({
+    desde: Date,
+    hasta: Date,
+    habitacion: {
+        ref: 'Habitacion',
+        id: ObjectId()
+    },
+    usuarios: {
+        ref: 'Usuarios',
+        id: ObjectId()
+    }
+});
+
+var facturaSchema = new Schema({
+    fecha: Date,
+    usuario: {
+        ref: 'Usuarios',
+        id: ObjectId()
+    },
+    tipo: String,
+    valor: Double,
+    IVA: Number
+})
