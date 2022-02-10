@@ -1,0 +1,79 @@
+#estilos{
+  border: 3px solid rosybrown;
+  background-color: rgb(240, 221, 219);
+  font-size: 12px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 700px;
+  padding: 30px;
+  margin-left: 100px;
+  color: rebeccapurple;
+}
+
+#estilosdatos{
+  border: 3px solid rosybrown;
+  background-color: rgb(240, 221, 219);
+  font-size: 12px;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 700px;
+  padding: 30px;
+  margin-left: 100px;
+  color: rebeccapurple;
+}
+#texto{
+  white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+}
+#header{
+	
+  width: 700px;
+  padding: 30px;
+  margin-left: 100px;
+	background-color: rgb(240, 221, 219);
+	border: 3px solid rosybrown;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer{
+	width: 700px;
+  padding: 30px;
+  margin-left: 100px;
+	background-color: rgb(240, 221, 219);
+	border: 3px solid rosybrown;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#boton{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5%;
+    margin-left: 15px;
+}
+
+#table{
+  text-align: center;
+	text-decoration: none;
+	padding: 2px 2px;
+	border: none;
+  color:black;
+	background-color: bisque;
+	font-size: 15px;
+	font-weight: bold;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+#td {
+  background: #fff;
+  color: #000;
+}
