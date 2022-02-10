@@ -18,16 +18,6 @@ class Empleado extends React.Component {
   state = {
     visible: true
   } 
-  cambiarEstado=()=>{
-    this.setState({
-      visible:false
-    })
-  }
-  cambiarEstado2=()=>{
-    this.setState({
-      visible:true
-    })
-  }
   render(){
     if(this.state.visible){
 
@@ -37,19 +27,14 @@ class Empleado extends React.Component {
         <h1>Nombre: {this.props.nombre}</h1>
         <h1>Apellido: {this.props.apellido}</h1>
         <h2>Cargo: {this.props.cargo}</h2>
-         
+        <button onClick={()=> alert('Funcionando')}>Cambiar estado</button> 
         <img src={this.props.nombreFoto} width='200' />    
-        <button onClick={this.cambiarEstado}>Cambiar estado</button>
-        
-
-
+                   
     </div>
 )
 }else {
     return (
-      <div>Sin datos
-      <button onClick={this.cambiarEstado2}>No hay datos</button>
-      </div>
+      <div>Sin datos</div>
     )  
   }
  }
