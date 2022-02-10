@@ -18,12 +18,17 @@ server.listen(3000, ()=>{console.log('Server on port 3000'.red)});
 */
 
 // se usa express
+//const { application } = require('express');
+const { application } = require('express')
+const morgan = require('morgan');
+
 const express = require('express');
 const server = express();
-//este es un middle world
+//este es un middleware
 server.use(express.json());
 
-server.get('/', function(req, res){
+/*
+server.get('/:id', function(req, res){
         //res.send('<h1>GET con express (GET)</h1>');
         res.json({
                 nombre: "Mayra",
@@ -31,6 +36,27 @@ server.get('/', function(req, res){
                 edad: "25"
         });
 })
+*/
+
+function logger(req, res, next){
+        console.log(`Peticion recibida: ${req.protocol}://${req.get('host')}${req.originalUrl}`);
+        next();
+}
+server.use(logger);
+server.use(morgan('tiny'));
+
+server.set('port', 5000);
+
+server.get('/conParametro/:id', (req, res)=>{
+        console.log(req.params)
+        res.send("<h1>CON PARAMETROS FUNCIONANDO </h1>")
+})
+
+server.listen(server.get('port'),(resq, res)=>{
+        console.log("El servidor esta en el puerto 3000")
+})
+
+/*
 server.post('/ingresarUsuario', function(req, res){
        console.log(req.body);
         res.send('<h1>Ingresar Usuario (POST)</h1>');
@@ -44,3 +70,4 @@ server.delete('/eliminarUsuario', function(req, res){
 server.listen(3000, function(){
         console.log('El servidor esta en el puerto 3000');
 })
+*/

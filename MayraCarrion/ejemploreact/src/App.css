@@ -1,0 +1,24 @@
+#hello{
+    border: 3px solid rosybrown;
+    background-color: rgb(240, 221, 219);
+    font-size: 12px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 300px;
+    padding: 30px;
+    margin-left: 550px;
+    width:700px;
+    color: rebeccapurple;
+}
+#hello2{
+    border: 3px solid rosybrown;
+    background-color: rgb(214, 214, 76);
+    font-size: 12px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 300px;
+    padding: 30px;
+    margin-left: 550px;
+    width:700px;
+    color: rebeccapurple;
+}

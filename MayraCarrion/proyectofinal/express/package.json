@@ -1,0 +1,22 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "Comprobacion de rutas en el sistema de habitaciones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "depurar": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "sistema"
+  ],
+  "author": "MC-RA",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.17.2"
+  }
+}

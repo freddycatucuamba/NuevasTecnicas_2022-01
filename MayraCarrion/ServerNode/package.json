@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "colors": "^1.4.0",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "morgan": "^1.10.0"
   },
   "name": "servernode",
   "version": "0.0.1",
